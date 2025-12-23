@@ -21,6 +21,6 @@ echo "========================================"
 echo "🎉 安装流程结束！"
 echo "📂 游戏位置: $DST_DIR"
 echo "📂 配置位置: $KLEI_DIR/DoNotStarveTogether"
-echo "⚠️  提示: 请确保在宿主机的 dst_config 目录中放入 cluster_token.txt"
+echo "⚠️  提示: 请确保在主机的存档目录中放入 cluster_token.txt"
 echo "========================================"
 
