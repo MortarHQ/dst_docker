@@ -5,14 +5,14 @@ ENV DEBIAN_FRONTEND=noninteractive \
     LC_ALL=C.UTF-8
 
 RUN set -e; \
-    dpkg --add-architecture i386; \
-    apt-get update; \
+    dpkg --add-architecture i386 && \
+    apt-get update && \
     apt-get install -y --no-install-recommends \
-      ca-certificates \
-      lib32gcc-s1 \
-      lib32stdc++6 \
-      libcurl3-gnutls:i386 \
-      libcurl3-gnutls; \
+        ca-certificates \
+        lib32gcc-s1 \
+        lib32stdc++6 \
+        libcurl3-gnutls:i386 \
+        libcurl3-gnutls; \
     rm -rf /var/lib/apt/lists/*
 
 # workspace 作为 steam 用户的 home（你会整目录挂载它）
