@@ -8,8 +8,3 @@ export DST_BIN="$HOME/dst_server/bin64"
 
 # 你的存档文件夹名称 (位于 ~/.klei/DoNotStarveTogether/ 下)
 export CLUSTER_NAME="MyDediServer"
-
-# -------------------- 依赖环境 --------------------
-# 确保系统能找到游戏目录下的动态链接库 (libcurl 等)
-export LD_LIBRARY_PATH="$DST_BIN:$LD_LIBRARY_PATH"
-

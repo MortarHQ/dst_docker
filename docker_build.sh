@@ -1,1 +1,2 @@
-docker build . -t steamcmd:0.0.1
+docker build . -t steamcmd-dst:0.0.1 && \
+docker image prune -f
